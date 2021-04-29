@@ -1,10 +1,11 @@
 import React from 'react'
+import {Container} from 'react-bootstrap'
 
 const Queue = () => {
     return (
-        <div>
-
-        </div>
+        <Container>
+            <h2>Queue</h2>
+        </Container>
     )
 }
 

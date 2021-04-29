@@ -1,10 +1,11 @@
 import React from 'react'
+import {Container} from 'react-bootstrap'
 
 const Stack = () => {
     return (
-        <div>
-
-        </div>
+        <Container>
+            <h2>Stack</h2>
+        </Container>
     )
 }
 

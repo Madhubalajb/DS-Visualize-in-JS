@@ -1,12 +1,7 @@
 import React from 'react'
-import { Jumbotron, Row, Col, Card } from 'react-bootstrap'
+import { Jumbotron } from 'react-bootstrap'
 import Clipboard from 'react-clipboard.js'
-import LinkedList from './LinkedList'
-import DLinkedList from './DLinkedList'
-import CLinkedList from './CLinkedList'
-import Stack from './Stack'
-import Queue from './Queue'
-import HashTable from './HashTable'
+import Cards from './Cards'
 
 const Home = () => {
     return (
@@ -28,52 +23,7 @@ const Home = () => {
                 
             </Jumbotron>
             <h5>Here we go...</h5>
-            <div className="cards">
-                <Row>
-                    <Col>
-                        <Card className="ll">
-                            Linked List
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className="dll">
-                            Doubly Linked List
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className="cll">
-                            Circular Linked List
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className="stack">
-                            Stack
-                        </Card>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Card className="q">
-                            Queue
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className="tree">
-                            Tree
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className="graph">
-                            Graph
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className="hash">
-                            Hash Table
-                        </Card>
-                    </Col>
-                </Row>
-            </div>
+            <Cards />
         </div>
     )
 }

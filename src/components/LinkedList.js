@@ -1,10 +1,11 @@
 import React from 'react'
+import {Container} from 'react-bootstrap'
 
 const LinkedList = () => {
     return (
-        <div>
-
-        </div>
+        <Container>
+            <h2>Linked List</h2>
+        </Container>
     )
 }
 

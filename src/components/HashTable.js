@@ -1,10 +1,11 @@
 import React from 'react'
+import {Container} from 'react-bootstrap'
 
 const HashTable = () => {
     return (
-        <div>
-
-        </div>
+        <Container>
+            <h2>Hash Table</h2>
+        </Container>
     )
 }
 

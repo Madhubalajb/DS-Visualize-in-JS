@@ -1,12 +1,12 @@
 import React from 'react'
 import {Container} from 'react-bootstrap'
 
-const CLinkedList = () => {
+const Tree = () => {
     return (
         <Container>
-            <h2>Circular Linked List</h2>
+            <h2>Tree</h2>
         </Container>
     )
 }
 
-export default CLinkedList
+export default Tree

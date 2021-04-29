@@ -19,6 +19,9 @@ body {
         }
     }
     .cards {
+        a {
+            text-decoration: none;
+        }
         margin-top: 30px;
         .card {
             cursor: pointer;
