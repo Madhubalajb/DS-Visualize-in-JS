@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const CLinkedList = () => {
     return (
-        <div>
+        <Container>
             <Link to="/">Home</Link>
             <h1>Circular Linked List</h1>
             <p className="lead">
@@ -80,7 +81,7 @@ const CLinkedList = () => {
                     <li>Continue with Iteration, until the next node's address field value equal to NULL.</li>
                 </ul>
             </div>
-        </div>
+        </Container>
     )
 }
 

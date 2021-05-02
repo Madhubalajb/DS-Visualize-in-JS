@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Stack = () => {
     return (
-        <div>
+        <Container>
             <Link to="/">Home</Link>
             <h1>Stack</h1>
             <p className="lead">
@@ -22,7 +23,7 @@ const Stack = () => {
 
             <h3>Pop</h3>
             <p>In the Pop operation, the data at the top of the Stack will be removed.</p>
-        </div>
+        </Container>
     )
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const DLinkedList = () => {
     return (
-        <div>
+        <Container>
             <Link to="/">Home</Link>
             <h1>Doubly Linked List</h1>
             <p>Doubly Linked List is the same as the Singly Linked List with an extra part holding the address of the previous Node.</p>
@@ -71,7 +72,7 @@ const DLinkedList = () => {
                 </li>
                 <li>You can also traverse the list in reverse order using the "prev" field.</li>
             </ul>
-        </div>
+        </Container>
     )
 }
 

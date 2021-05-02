@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Queue = () => {
     return (
-        <div>
+        <Container>
             <Link to="/">Home</Link>
             <h1>Queue</h1>
             <p className="lead">
@@ -20,7 +21,7 @@ const Queue = () => {
 
             <h3>DeQueue</h3>
             <p>In DeQueue, the item at the head of the Queue will be removed.</p>
-        </div>
+        </Container>
     )
 }
 

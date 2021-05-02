@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const LinkedList = () => {
     return (
-        <div>
+        <Container>
             <Link to="/">Home</Link>
             <h1>Linked List</h1>
             <p className="lead">
@@ -73,7 +74,7 @@ const LinkedList = () => {
                     <li>Continue with Iteration, until the next node's address field value equal to NULL.</li>
                 </ul>
             </div>
-        </div>
+        </Container>
     )
 }
 
