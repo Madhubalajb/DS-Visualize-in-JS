@@ -1,11 +1,11 @@
 import React from 'react'
-import { Jumbotron } from 'react-bootstrap'
+import { Jumbotron, Container } from 'react-bootstrap'
 import Clipboard from 'react-clipboard.js'
 import Cards from './Cards'
 
 const Home = () => {
     return (
-        <div>
+        <Container>
             <h1 className="main-h1">Visualize Data Structures in JavaScript</h1>
             <Jumbotron>
                 <h4>Disclaimer</h4>
@@ -26,7 +26,7 @@ const Home = () => {
             <Cards />
             1. Work more on Definitions
             2. And on data holders
-        </div>
+        </Container>
     )
 }
 
