@@ -1,11 +1,12 @@
 import React from 'react'
-import {Container} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Tree = () => {
     return (
-        <Container>
-            <h2>Tree</h2>
-        </Container>
+        <div>
+            <Link to="/">Home</Link>
+            <h1>Tree</h1>
+        </div>
     )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react'
-import {Container} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Graph = () => {
     return (
-        <Container>
-            <h2>Graph</h2>
-        </Container>
+        <div>
+            <Link to="/">Home</Link>
+            <h1>Graph</h1>
+        </div>
     )
 }
 

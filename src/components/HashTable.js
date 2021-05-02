@@ -1,11 +1,12 @@
 import React from 'react'
-import {Container} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const HashTable = () => {
     return (
-        <Container>
-            <h2>Hash Table</h2>
-        </Container>
+        <div>
+            <Link to="/">Home</Link>
+            <h1>Hash Table</h1>
+        </div>
     )
 }
 

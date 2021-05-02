@@ -6,7 +6,7 @@ import Cards from './Cards'
 const Home = () => {
     return (
         <div>
-            <h1>Visualize Data Structures in JavaScript</h1>
+            <h1 className="main-h1">Visualize Data Structures in JavaScript</h1>
             <Jumbotron>
                 <h4>Disclaimer</h4>
                 <p>
@@ -24,6 +24,8 @@ const Home = () => {
             </Jumbotron>
             <h5>Here we go...</h5>
             <Cards />
+            1. Work more on Definitions
+            2. And on data holders
         </div>
     )
 }
