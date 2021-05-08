@@ -24,8 +24,6 @@ const Home = () => {
             </Jumbotron>
             <h5>Here we go...</h5>
             <Cards />
-            1. Work more on Definitions
-            2. And on data holders
         </Container>
     )
 }

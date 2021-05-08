@@ -17,62 +17,74 @@ const CLinkedList = () => {
             <p>Following are the basic operations that can be performed in Circular Linked List:</p>
             <div>
                 <h3>Insertion</h3>
-                <h5>At the beginning of the list</h5>
-                <ul>
-                    <li>Create a new node holding the data and the <kbd>next field</kbd> is <mark>NULL</mark>.</li>
-                    <li>Now put the address of the Head node in the new node's <kbd>next field</kbd>. And make the new node as the <mark>Head</mark> node.</li>
-                    <li>
-                        Since it is Circular Linked List, the <mark>Tail</mark> node's <kbd>next field</kbd> should be pointing to the <mark>Head</mark> node. So, assign 
-                        the <mark>Tail</mark> node's <kbd>next field</kbd> with the address of the <mark>Head</mark> node
-                    </li>
-                </ul>
-                <img className="gif" alt="Circly_List_Insertion" src={insert_1} />
-
-                <h5>At the nth position of the list</h5>
-                <ul>
-                    <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
-                    <li>
-                        Traverse the list from <mark>Head</mark> to the <mark>(n-1)th node</mark>, (n-1)th node is the node after which we want to
-                        insert our new node.
-                    </li>
-                    <li>Now, assign the new node's next field with the (n-1)th node's next field value.</li>
-                    <li>Then assign the (n-1)th node next field with the address of the new node.</li>
-                </ul>
-
-                <h5>At the end of the list</h5>
-                <ul>
-                    <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
-                    <li>Assign the Tail node's next field with the address of the new node.</li>
-                    <li>Now make the new node as the Tail node and assign the tail node's next field with the address of the Head node.</li>
-                </ul>
+                <details>
+                    <summary>At the beginning of the list</summary>
+                    <ul>
+                        <li>Create a new node holding the data and the <kbd>next field</kbd> is <mark>NULL</mark>.</li>
+                        <li>Now put the address of the Head node in the new node's <kbd>next field</kbd>. And make the new node as the <mark>Head</mark> node.</li>
+                        <li>
+                            Since it is Circular Linked List, the <mark>Tail</mark> node's <kbd>next field</kbd> should be pointing to the <mark>Head</mark> node. So, assign 
+                            the <mark>Tail</mark> node's <kbd>next field</kbd> with the address of the <mark>Head</mark> node
+                        </li>
+                    </ul>
+                    <img className="gif" alt="Circly_List_Insertion" src={insert_1} />
+                </details>
+                
+                <details>
+                    <summary>At the n<sup>th</sup> position of the list</summary>
+                    <ul>
+                        <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
+                        <li>
+                            Traverse the list from <mark>Head</mark> to the <mark>(n-1)<sup>th</sup> node</mark>, (n-1)<sup>th</sup> node is the node after which we want to
+                            insert our new node.
+                        </li>
+                        <li>Now, assign the new node's next field with the (n-1)<sup>th</sup> node's next field value.</li>
+                        <li>Then assign the (n-1)<sup>th</sup> node next field with the address of the new node.</li>
+                    </ul>
+                </details>
+                
+                <details>
+                    <summary>At the end of the list</summary>
+                    <ul>
+                        <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
+                        <li>Assign the Tail node's next field with the address of the new node.</li>
+                        <li>Now make the new node as the Tail node and assign the tail node's next field with the address of the Head node.</li>
+                    </ul>
+                </details>
             </div>
 
             <div>
                 <h3>Deletion</h3>
-                <h5>Deleting the Head node</h5>
-                <ul>
-                    <li>
-                        Make the second node of the list as the Head node. Then assign the Tail node's next field with the address of the 
-                        Head node.
-                    </li>
-                </ul>
-
-                <h5>Deleting the node at the nth position of the list</h5>
-                <ul>
-                    <li>
-                        Traverse the list from <mark>Head</mark> to the <mark>(n-1)th node</mark>, (n-1)th node is the node after which is
-                        before the gonna delete node.
-                    </li>
-                    <li>Now assign the (n-1)th node's next field with the nth node's next field value.</li>
-                </ul>
-
-                <h5>Deleting the Tail node</h5>
-                <ul>
-                    <li>
-                        Traverse the list from Head to the node before the Tail node. And assign the (n-1)th node's next field with the
-                        address of the Head node.
-                    </li>
-                </ul>
+                <details>
+                    <summary>Deleting the Head node</summary>
+                    <ul>
+                        <li>
+                            Make the second node of the list as the Head node. Then assign the Tail node's next field with the address of the 
+                            Head node.
+                        </li>
+                    </ul>
+                </details>
+                
+                <details>
+                    <summary>Deleting the node at the n<sup>th</sup> position of the list</summary>
+                    <ul>
+                        <li>
+                            Traverse the list from <mark>Head</mark> to the <mark>(n-1)<sup>th</sup> node</mark>, (n-1)<sup>th</sup> node is the node after which is
+                            before the gonna delete node.
+                        </li>
+                        <li>Now assign the (n-1)<sup>th</sup> node's next field with the n<sup>th</sup> node's next field value.</li>
+                    </ul>
+                </details>
+                
+                <details>
+                    <summary>Deleting the Tail node</summary>
+                    <ul>
+                        <li>
+                            Traverse the list from Head to the node before the Tail node. And assign the (n-1)<sup>th</sup> node's next field with the
+                            address of the Head node.
+                        </li>
+                    </ul>
+                </details>
             </div>
 
             <div>
