@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import insert_1 from '../gifs/CL/Circly_List_Insertion_1.gif'
 
 const CLinkedList = () => {
     return (
@@ -13,18 +14,19 @@ const CLinkedList = () => {
             <p className="bd-callout">
                 In Circular Linked List, we refer to the first node of the list as <mark>Head</mark> and the last node as <mark>Tail</mark>.
             </p>
-            
+            <p>Following are the basic operations that can be performed in Circular Linked List:</p>
             <div>
                 <h3>Insertion</h3>
                 <h5>At the beginning of the list</h5>
                 <ul>
-                    <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
-                    <li>Now put the address of the Head node in the new node's next field. And make the new node as the Head node.</li>
+                    <li>Create a new node holding the data and the <kbd>next field</kbd> is <mark>NULL</mark>.</li>
+                    <li>Now put the address of the Head node in the new node's <kbd>next field</kbd>. And make the new node as the <mark>Head</mark> node.</li>
                     <li>
-                        Since it is Circular Linked List, the Tail node should be pointing to the Head node. So, assign the Tail node's next 
-                        field with the address of the Head node
+                        Since it is Circular Linked List, the <mark>Tail</mark> node's <kbd>next field</kbd> should be pointing to the <mark>Head</mark> node. So, assign 
+                        the <mark>Tail</mark> node's <kbd>next field</kbd> with the address of the <mark>Head</mark> node
                     </li>
                 </ul>
+                <img className="gif" src={insert_1} />
 
                 <h5>At the nth position of the list</h5>
                 <ul>

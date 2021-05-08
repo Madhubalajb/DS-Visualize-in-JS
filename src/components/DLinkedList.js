@@ -1,25 +1,28 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import insert_1 from '../gifs/DL/Doubly_List_Insertion_1.gif'
 
 const DLinkedList = () => {
     return (
         <Container>
             <Link to="/">Home</Link>
             <h1>Doubly Linked List</h1>
-            <p>Doubly Linked List is the same as the Singly Linked List with an extra part holding the address of the previous Node.</p>
+            <p className="lead">Doubly Linked List is the same as the Singly Linked List with an extra part called <mark>prev field</mark> holding the address of the previous Node.</p>
+            <p>Following are the basic operations that can be performed in Doubly Linked List:</p>
             <div>
                 <h3>Insertion</h3>
                 <h5>At the beginning of the list</h5>
                 <ul>
                     <li>
-                        Just create a new Node holding the data, prev field having the NULL value and the next field having the address value of the 
-                        Head Node (1st Node).
+                        Create a new Node holding the data, <kbd>prev field</kbd> having <mark>NULL</mark> value and the <kbd>next field</kbd> having the address of the <mark>Head</mark> node (First node).
                     </li>
-                    <li>Then reinitialize the New Node as the Head Node.</li>
+                    <li>Assign the <mark>Head</mark> node's <kbd>prev field</kbd> with the address of the new node.</li>
+                    <li>Then reinitialize the new node as <mark>Head</mark> node.</li>
                 </ul>
+                <img className="gif" src={insert_1} />
 
-                <h5>At the nth position</h5>
+                <h5>At the nth position of the list</h5>
                 <ul>
                     <li>Create a doubly Linked List new node holding the data, the prev and the next fields having the NULL value.</li>
                     <li>Traverse the list from Head to the (n-1)th Node the node after which we went to insert our new node.</li>

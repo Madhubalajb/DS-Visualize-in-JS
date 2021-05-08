@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import insert_1 from '../gifs/LL/Linked_List_Insertion_1.gif'
 
 const LinkedList = () => {
     return (
@@ -11,29 +12,29 @@ const LinkedList = () => {
                 A linked list is nothing but a collection of nodes where each node has two parts. One is to hold the data and the other one is to hold 
                 the address of the next node. i.e., a pointer pointing to the next node.
             </p>
+            <div className="bd-callout">
+                    <p>In Linked List, the first node is called as the <mark>Head</mark> node. <br/></p>
+                    <p>The <kbd>next field</kbd> of the last node is always <mark>NULL</mark>. Since it is the last node and doesn't have any other nodes to point after.</p>
+                </div>
             <p>Following are the basic operations that can be performed in Linked List:</p>
             
             <div>
                 <h3>Insertion</h3>
                 <h5>At the beginning of the list</h5> 
-                <div className="bd-callout">
-                    Fact: In Linked Lists, we refer to the 1st node as <mark>Head</mark>.
-                    And the address pointer of the last node is NULL. Since it is the last node and doesn't have any node to point after.
-                </div>
                 <ul>
                     <li>
-                        To add a node at the beginning of the list, just create a new node holding the data and the address field to point to the 
-                        <mark>Head</mark> node of the list.
+                        To add a node at the beginning of the list, just create a new node holding the data and the <kbd>next field</kbd> as pointing the <mark>Head</mark> node of the list.
                     </li>
-                    <li>Then reinitialize the new node as Head node.</li>
+                    <li>Then reinitialize the new node as <mark>Head</mark> node.</li>
                 </ul>
+                <img className="gif" src={insert_1} />
                 
                 <h5>At the nth position of the list</h5>
                 <ul>
-                    <li>First create a node holding the data and the address field pointing to NULL.</li>
+                    <li>First create a new node holding the data and the <kbd>next field</kbd> pointing to NULL.</li>
                     <li>Traverse the list from Head to the (n-1)th node. i.e., (n-1)th node is the node after which we want to insert our new node.</li>
-                    <li>Now, take the (n-1)th node's address field value and assign it to the new node's address field.</li>
-                    <li>Then assign the new node's original address to the (n-1)th node' address field pointer.</li>
+                    <li>Now, take the (n-1)th node's next field value and assign it to the new node's next field.</li>
+                    <li>Then assign the new node's original address to the (n-1)th node' next field.</li>
                 </ul>
                 
                 <h5>At the end of the list</h5>
