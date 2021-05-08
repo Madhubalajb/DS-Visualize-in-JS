@@ -26,7 +26,7 @@ const CLinkedList = () => {
                         the <mark>Tail</mark> node's <kbd>next field</kbd> with the address of the <mark>Head</mark> node
                     </li>
                 </ul>
-                <img className="gif" src={insert_1} />
+                <img className="gif" alt="Circly_List_Insertion" src={insert_1} />
 
                 <h5>At the nth position of the list</h5>
                 <ul>

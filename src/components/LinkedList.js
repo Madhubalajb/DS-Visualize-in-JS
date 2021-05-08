@@ -27,7 +27,7 @@ const LinkedList = () => {
                     </li>
                     <li>Then reinitialize the new node as <mark>Head</mark> node.</li>
                 </ul>
-                <img className="gif" src={insert_1} />
+                <img className="gif" alt="Linked_List_Insertion" src={insert_1} />
                 
                 <h5>At the nth position of the list</h5>
                 <ul>

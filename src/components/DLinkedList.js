@@ -20,7 +20,7 @@ const DLinkedList = () => {
                     <li>Assign the <mark>Head</mark> node's <kbd>prev field</kbd> with the address of the new node.</li>
                     <li>Then reinitialize the new node as <mark>Head</mark> node.</li>
                 </ul>
-                <img className="gif" src={insert_1} />
+                <img className="gif" alt="Doubly_List_Insertion" src={insert_1} />
 
                 <h5>At the nth position of the list</h5>
                 <ul>
