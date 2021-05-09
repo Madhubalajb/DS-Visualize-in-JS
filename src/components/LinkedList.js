@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import insert_1 from '../gifs/LL/Linked_List_Insertion_1.gif'
 import insert_2 from '../gifs/LL/Linked_List_Insertion_2.gif'
 import insert_3 from '../gifs/LL/Linked_List_Insertion_3.gif'
+import delete_1 from '../gifs/LL/Linked_List_Deletion_1.gif'
+import delete_2 from '../gifs/LL/Linked_List_Deletion_2.gif'
+import delete_3 from '../gifs/LL/Linked_List_Deletion_3.gif'
 
 const LinkedList = () => {
     return (
@@ -61,24 +64,28 @@ const LinkedList = () => {
                     <summary>Deleting the Head node of the list</summary>
                     <ul>
                         <li>Just simply made the second node as <mark>Head</mark> node. This way we are deleting the data at the beginning of the list.</li>
+                        <li>Once the first node becomes unreachable, <a href="https://javascript.info/garbage-collection" target="_blank" rel="noreferrer" >Javascript garbage collector</a> will delete that and free the memory.</li>
                     </ul>
+                    <img className="gif" alt="Linked_List_Deletion_1" src={delete_1} />
                 </details>
                 
                 <details>
-                    <summary>Deleting the n<sup>th</sup> position</summary>
+                    <summary>Deleting the n<sup>th</sup> position of the list</summary>
                     <ul>
-                        <li>Traverse the list from Head to the (n-1)<sup>th</sup> node. i.e., here (n-1)<sup>th</sup> node is the node, which is before the gonna delete node (nth node).</li>
-                        <li>Now take the address (original location) of the (n-1)<sup>th</sup> node, the node which is after the gonna delete node (nth node), and put it in the
-                        (n-1)<sup>th</sup> node's address field Value.</li>
+                        <li>Traverse the list from <mark>Head</mark> node to the <mark>(n-1)<sup>th</sup></mark> node. Here (n-1)<sup>th</sup> node is the node, which is before the gonna delete node (n<sup>th</sup> node).</li>
+                        <li>Now take the address of the <marK>(n+1)<sup>th</sup></marK> node (the node which is after the gonna delete node (nth node)), and put it in the
+                        (n-1)<sup>th</sup> node's <kbd>next field</kbd>.</li>
                     </ul>
+                    <img className="gif" alt="Linked_List_Deletion_2" src={delete_2} />
                 </details>
                 
                 <details>
                     <summary>Deleting the end of the list</summary>
                     <ul>
-                        <li>Just like before, traverse from Head node to the <mark>(n-1)<sup>th</sup> node</mark> of the List.</li>
-                        <li>Now, just assign the (n-1)<sup>th</sup> node, the address field value is NULL.</li>
+                        <li>Just like before, traverse from <mark>Head</mark> node to the <mark>(n-1)<sup>th</sup></mark>  node of the List.</li>
+                        <li>Then assign the (n-1)<sup>th</sup> node's <kbd>next field</kbd> to <mark>NULL</mark>.</li>
                     </ul>
+                    <img className="gif" alt="Linked_List_Deletion_3" src={delete_3} />
                 </details>
             </div>
             
@@ -86,7 +93,7 @@ const LinkedList = () => {
                 <h3>Traversal</h3>
                 <ul>
                     <li>We can traverse the list from Head to whatever position you want using the loop functionality (while, for, do-while...)</li>
-                    <li>In each Iteration just point to the next node using the current node's address field value.</li>
+                    <li>In each Iteration just point to the next node using the current node's <kbd>next field</kbd> value.</li>
                     <li>Continue with Iteration, until the next node's address field value equal to NULL.</li>
                 </ul>
             </div>

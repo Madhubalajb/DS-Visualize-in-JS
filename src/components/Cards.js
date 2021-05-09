@@ -44,25 +44,25 @@ const Cards = () => {
                     </Link>
                 </Col>
                 <Col>
-                    <Link to="/Tree">
+                    {/* <Link to="/Tree"> */}
                         <Card className="tree">
                             Tree
                         </Card>
-                    </Link>
+                    {/* </Link> */}
                 </Col>
                 <Col>
-                    <Link to="/Graph">
+                    {/* <Link to="/Graph"> */}
                         <Card className="graph">
                             Graph
                         </Card>
-                    </Link>
+                    {/* </Link> */}
                 </Col>
                 <Col>
-                    <Link to="/Hash_Table">
+                    {/* <Link to="/Hash_Table"> */}
                         <Card className="hash">
                             Hash Table
                         </Card>
-                    </Link>
+                    {/* </Link> */}
                 </Col>
             </Row>
         </div>

@@ -8,19 +8,22 @@ const Queue = () => {
             <Link to="/">Home</Link>
             <h1>Queue</h1>
             <p className="lead">
-                A Queue is a linear data structure where the data items are collected in a real Queue! Let's say like a movie ticket counter.
-                It has two open ends. One is to insert data and the other is to remove data. <br/>
-                It follows <mark>FIFO (First In First Out)</mark> i.e., whatever item is inserted first will be removed first. <br/>
-                Or <mark>LILO (Last In Last Out)</mark> i.e., the item which is inserted last will be removed last.
+                A Queue is a <mark>linear data structure</mark> where the data items are collected in a real Queue! Let's say like a movie ticket counter.
+                It has two open ends. One is to <mark>insert</mark> the data and the other is to <mark>remove</mark> the data.
+            </p>
+
+            <p className="bd-callout">
+                It follows <mark>FIFO</mark> (First In First Out) i.e., whatever item that is inserted first will be removed first. <br/>
+                Or <mark>LILO</mark> (Last In Last Out) i.e., the item which is inserted last will be removed last.
             </p>
             
             <p>Let's look at the operations the Queue can handle</p>
 
             <h3>EnQueue</h3>
-            <p>Here we are inserting the data at the Tail of the Queue.</p>
+            <p>Here we are <mark>inserting</mark> the data at the <mark>Tail</mark> of the Queue.</p>
 
             <h3>DeQueue</h3>
-            <p>In DeQueue, the item at the head of the Queue will be removed.</p>
+            <p>In DeQueue, the item at the <mark>Head</mark> of the Queue will be <mark>removed</mark>.</p>
         </Container>
     )
 }

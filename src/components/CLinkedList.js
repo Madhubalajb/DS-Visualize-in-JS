@@ -2,6 +2,11 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import insert_1 from '../gifs/CL/Circly_List_Insertion_1.gif'
+import insert_2 from '../gifs/CL/Circly_List_Insertion_2.gif'
+import insert_3 from '../gifs/CL/Circly_List_Insertion_3.gif'
+import delete_1 from '../gifs/CL/Circly_List_Deletion_1.gif'
+import delete_2 from '../gifs/CL/Circly_List_Deletion_2.gif'
+import delete_3 from '../gifs/CL/Circly_List_Deletion_3.gif'
 
 const CLinkedList = () => {
     return (
@@ -33,23 +38,23 @@ const CLinkedList = () => {
                 <details>
                     <summary>At the n<sup>th</sup> position of the list</summary>
                     <ul>
-                        <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
-                        <li>
-                            Traverse the list from <mark>Head</mark> to the <mark>(n-1)<sup>th</sup> node</mark>, (n-1)<sup>th</sup> node is the node after which we want to
-                            insert our new node.
-                        </li>
-                        <li>Now, assign the new node's next field with the (n-1)<sup>th</sup> node's next field value.</li>
-                        <li>Then assign the (n-1)<sup>th</sup> node next field with the address of the new node.</li>
+                        <li>First create a new node holding the data and the <kbd>next field</kbd> pointing to <mark>NULL</mark>.</li>
+                        <li>Traverse the list from <mark>Head</mark> to the <mark>(n-1)<sup>th</sup></mark> node. i.e., (n-1)<sup>th</sup> node is the node after which we want to insert our new node.</li>
+                        <li>Now, take the (n-1)<sup>th</sup> node's <kbd>next field</kbd> value and assign it to the new node's <kbd>next field</kbd>.</li>
+                        <li>Then assign the <mark>new node's address</mark> to the (n-1)<sup>th</sup> node's <kbd>next field</kbd>.</li>
                     </ul>
+                    <img className="gif" alt="Circly_List_Insertion_2" src={insert_2} />
                 </details>
                 
                 <details>
                     <summary>At the end of the list</summary>
                     <ul>
-                        <li>Create a new node holding the data and the next field is <mark>NULL</mark>.</li>
-                        <li>Assign the Tail node's next field with the address of the new node.</li>
-                        <li>Now make the new node as the Tail node and assign the tail node's next field with the address of the Head node.</li>
+                        <li>Create a new node holding the data and the <kbd>next field</kbd> value as <mark>NULL</mark>.</li>
+                        <li>Assign the Tail node's <kbd>next field</kbd> with the <mark>address</mark> of the new node.</li>
+                        <li>Make the new node as the <mark>Tail</mark> node</li>
+                        <li>At last, again assign the Tail node's <kbd>next field</kbd> with the <mark>address</mark> of the Head node.</li>
                     </ul>
+                    <img className="gif" alt="Circly_List_Insertion_3" src={insert_3} />
                 </details>
             </div>
 
@@ -58,32 +63,29 @@ const CLinkedList = () => {
                 <details>
                     <summary>Deleting the Head node</summary>
                     <ul>
-                        <li>
-                            Make the second node of the list as the Head node. Then assign the Tail node's next field with the address of the 
-                            Head node.
-                        </li>
+                        <li>Make the second node of the list as the <mark>Head</mark> node.</li>
+                        <li>Then assign the Tail node's <kbd>next field</kbd> with the <mark>address</mark> of the <mark>Head</mark> node.</li>
                     </ul>
+                    <img className="gif" alt="Circly_List_Deletion_1" src={delete_1} />
                 </details>
                 
                 <details>
-                    <summary>Deleting the node at the n<sup>th</sup> position of the list</summary>
+                    <summary>Deleting at the n<sup>th</sup> position of the list</summary>
                     <ul>
-                        <li>
-                            Traverse the list from <mark>Head</mark> to the <mark>(n-1)<sup>th</sup> node</mark>, (n-1)<sup>th</sup> node is the node after which is
-                            before the gonna delete node.
-                        </li>
-                        <li>Now assign the (n-1)<sup>th</sup> node's next field with the n<sup>th</sup> node's next field value.</li>
+                        <li>Traverse the list from <mark>Head</mark> node to the <mark>(n-1)<sup>th</sup></mark> node. Here (n-1)<sup>th</sup> node is the node, which is before the gonna delete node (n<sup>th</sup> node).</li>
+                        <li>Now take the address of the <marK>(n+1)<sup>th</sup></marK> node (the node which is after the gonna delete node (nth node)), and put it in the
+                        (n-1)<sup>th</sup> node's <kbd>next field</kbd>.</li>
                     </ul>
+                    <img className="gif" alt="Circly_List_Deletion_2" src={delete_2} />
                 </details>
                 
                 <details>
                     <summary>Deleting the Tail node</summary>
                     <ul>
-                        <li>
-                            Traverse the list from Head to the node before the Tail node. And assign the (n-1)<sup>th</sup> node's next field with the
-                            address of the Head node.
-                        </li>
+                        <li>Traverse the list from <mark>Head</mark> node to the node ((n-1)<sup>th</sup> node), which is before the <mark>Tail</mark> node (n<sup>th</sup> node).</li>
+                        <li>And assign the (n-1)<sup>th</sup> node's <kbd>next field</kbd> with the <mark>address</mark> of the Head node.</li>
                     </ul>
+                    <img className="gif" alt="Circly_List_Deletion_3" src={delete_3} />
                 </details>
             </div>
 

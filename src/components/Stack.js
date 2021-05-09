@@ -19,10 +19,10 @@ const Stack = () => {
             <p>The two main operations performed in the Stack are</p>
 
             <h3>Push</h3>
-            <p>In the Push operation, the data will be added as top of the Stack.</p>
+            <p>In the Push operation, the data will be <mark>added</mark> at the top of the Stack.</p>
 
             <h3>Pop</h3>
-            <p>In the Pop operation, the data at the top of the Stack will be removed.</p>
+            <p>In the Pop operation, the data at the top of the Stack will be <mark>removed</mark>.</p>
         </Container>
     )
 }

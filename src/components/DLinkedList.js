@@ -2,6 +2,11 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import insert_1 from '../gifs/DL/Doubly_List_Insertion_1.gif'
+import insert_2 from '../gifs/DL/Doubly_List_Insertion_2.gif'
+import insert_3 from '../gifs/DL/Doubly_List_Insertion_3.gif'
+import delete_1 from '../gifs/DL/Doubly_List_Deletion_1.gif'
+import delete_2 from '../gifs/DL/Doubly_List_Deletion_2.gif'
+import delete_3 from '../gifs/DL/Doubly_List_Deletion_3.gif'
 
 const DLinkedList = () => {
     return (
@@ -21,56 +26,61 @@ const DLinkedList = () => {
                         <li>Assign the <mark>Head</mark> node's <kbd>prev field</kbd> with the address of the new node.</li>
                         <li>Then reinitialize the new node as <mark>Head</mark> node.</li>
                     </ul>
-                    <img className="gif" alt="Doubly_List_Insertion" src={insert_1} />
+                    <img className="gif" alt="Doubly_List_Insertion_1" src={insert_1} />
                 </details>
                 
                 <details>
                     <summary>At the n<sup>th</sup> position of the list</summary>
                     <ul>
-                        <li>Create a Doubly Linked List new node holding the data, the prev and the next fields having the NULL value.</li>
-                        <li>Traverse the list from Head to the (n-1)<sup>th</sup> Node the node after which we went to insert our new node.</li>
-                        <li>Now, take the (n-1)<sup>th</sup> Node's address field value and assign it to the new node's address field(next).</li>
-                        <li>Then assign the new node's original address to the (n-1)<sup>th</sup> Node's next field.</li>
-                        <li>Assign the (n-1)<sup>th</sup> node's original address to the new node's prev field.</li> 
-                    </ul>                    
+                        <li>Create a Doubly Linked List new node holding the data, the <mark>prev</mark> and the <mark>next</mark> fields having the <mark>NULL</mark> value.</li>
+                        <li>Traverse the list from <mark>Head</mark> to the <mark>(n-1)<sup>th</sup></mark> node. i.e., (n-1)<sup>th</sup> node is the node after which we want to insert our new node.</li>
+                        <li>Now, take the (n-1)<sup>th</sup> node's <kbd>next field</kbd> value and assign it to the new node's <kbd>next field</kbd>.</li>
+                        <li>Then assign the new node's original address to the (n-1)<sup>th</sup> node's <kbd>next field</kbd>.</li>
+                        <li>Assign the (n-1)<sup>th</sup> node's address to the new node's <kbd>prev field</kbd>.</li> 
+                    </ul>
+                    <img className="gif" alt="Doubly_List_Insertion_2" src={insert_2} />                    
                 </details>
                 
                 <details>
                     <summary>At the end of the list</summary>
                     <ul>
-                        <li>Create a doubly linked list new node holding the data, the prev and the next field fields having the NULL value.</li>
-                        <li>Traverse from Head to the last Node of the list.</li>
-                        <li>Assign the new node's original address to the last node's next field.</li>
-                        <li>At last, assign the last Node's address to the new node's prev field.</li>
+                        <li>Create a doubly linked list new node holding the data, the <mark>prev</mark> and the <mark>next</mark> field fields having <mark>NULL</mark> value.</li>
+                        <li>Traverse from <mark>Head</mark> to the <mark>last </mark>node of the list.</li>
+                        <li>Assign the new node's address to the last node's <kbd>next field</kbd>.</li>
+                        <li>At last, assign the last node's address to the new node's <kbd>prev field</kbd>.</li>
                     </ul>
+                    <img className="gif" alt="Doubly_List_Insertion_3" src={insert_3} />
                 </details>
             </div>
             
             <div>
                 <h3>Deletion</h3>
                 <details>
-                    <summary>Deleting the Head Node (1st Node)</summary>
+                    <summary>Deleting the Head of the list</summary>
                     <ul>
-                        <li>Make the second Node of the list as the Head Node.</li>
-                        <li>And assign NULL to the prev field of the Head Node.</li>
+                        <li>Make the second Node of the list as the <mark>Head</mark> node.</li>
+                        <li>And assign <mark>NULL</mark> to the <kbd>prev field</kbd> of the Head node.</li>
                     </ul>
+                    <img className="gif" alt="Doubly_List_Deletion_1" src={delete_1} />
                 </details>
                 
                 <details>
-                    <summary>Deleting the n<sup>th</sup> position</summary>
+                    <summary>Deleting the n<sup>th</sup> position of the list</summary>
                     <ul>
-                        <li>Traverse the list from the Head node to the (n-1)<sup>th</sup> Node. Here (n-1)<sup>th</sup> Node is the node that is before the gonna delete Node.</li>
-                        <li>Assign the address of the (n+1)<sup>th</sup> Node(Node which is after the gonna delete node) to the (n-1)<sup>th</sup> Node next field.</li>
-                        <li>And assign the address of the (n-1)<sup>th</sup> Node to the (n+1)<sup>th</sup> Node's prev field.</li>
+                        <li>Traverse the list from the <mark>Head</mark> node to the <mark>(n-1)<sup>th</sup></mark> node. Here (n-1)<sup>th</sup> node is the node that is before the gonna delete node.</li>
+                        <li>Assign the <mark>address</mark> of the <mark>(n+1)<sup>th</sup></mark> node (node which is after the gonna delete node) to the (n-1)<sup>th</sup> node's <kbd>next field</kbd>.</li>
+                        <li>And assign the address of the (n-1)<sup>th</sup> node to the (n+1)<sup>th</sup> node's <kbd>prev field</kbd>.</li>
                     </ul>
+                    <img className="gif" alt="Doubly_List_Deletion_2" src={delete_2} />
                 </details>
                 
                 <details>
                     <summary>Deleting the last Node of the list</summary>
                     <ul>
-                        <li>Traverse the list from Head Node to the (n-1)<sup>th</sup> Node. i.e., n is the last Node here.</li>
-                        <li>Just assign the (n-1)<sup>th</sup> Node's next value to NULL.</li>
+                        <li>Traverse the list from <mark>Head</mark> node to the <mark>(n-1)<sup>th</sup></mark> node. i.e., n is the last node here.</li>
+                        <li>Then assign the (n-1)<sup>th</sup> node's <kbd>next field</kbd> to NULL.</li>
                     </ul>
+                    <img className="gif" alt="Doubly_List_Deletion_3" src={delete_3} />
                 </details>
             </div>
             
