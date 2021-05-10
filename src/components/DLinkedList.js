@@ -97,6 +97,7 @@ const DLinkedList = () => {
                 </li>
                 <li>You can also traverse the list in reverse order using the "prev" field.</li>
             </ul>
+            <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/doublyLL.js" target="_blank" ref="noreferrer">here</a></p>
         </Container>
     )
 }
