@@ -23,7 +23,7 @@ const Stack = () => {
 
             <h3>Pop</h3>
             <p>In the Pop operation, the data at the top of the Stack will be <mark>removed</mark>.</p>
-            <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/stack.js" target="_blank" ref="noreferrer">here</a></p>
+            <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/stack.js" target="_blank" rel="noreferrer">here</a></p>
         </Container>
     )
 }

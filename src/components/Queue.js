@@ -24,7 +24,7 @@ const Queue = () => {
 
             <h3>DeQueue</h3>
             <p>In DeQueue, the item at the <mark>Head</mark> of the Queue will be <mark>removed</mark>.</p>
-            <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/queue.js" target="_blank" ref="noreferrer">here</a></p>
+            <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/queue.js" target="_blank" rel="noreferrer">here</a></p>
         </Container>
     )
 }
