@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import Push from '../gifs/Stack/Stack_Push.gif'
+import Pop from '../gifs/Stack/Stack_Pop.gif'
 
 const Stack = () => {
     return (
@@ -20,9 +22,11 @@ const Stack = () => {
 
             <h3>Push</h3>
             <p>In the Push operation, the data will be <mark>added</mark> at the top of the Stack.</p>
+            <img className="gif" alt="Push" src={Push} />
 
             <h3>Pop</h3>
             <p>In the Pop operation, the data at the top of the Stack will be <mark>removed</mark>.</p>
+            <img className="gif" alt="Pop" src={Pop} />
             <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/stack.js" target="_blank" rel="noreferrer">here</a></p>
         </Container>
     )

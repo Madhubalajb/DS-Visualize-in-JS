@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import EnQueue from '../gifs/Queue/EnQueue.gif'
+import DeQueue from '../gifs/Queue/DeQueue.gif'
 
 const Queue = () => {
     return (
@@ -21,9 +23,11 @@ const Queue = () => {
 
             <h3>EnQueue</h3>
             <p>Here we are <mark>inserting</mark> the data at the <mark>Tail</mark> of the Queue.</p>
+            <img className="gif" alt="EnQueue" src={EnQueue} />
 
             <h3>DeQueue</h3>
             <p>In DeQueue, the item at the <mark>Head</mark> of the Queue will be <mark>removed</mark>.</p>
+            <img className="gif" alt="DeQueue" src={DeQueue} />
             <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/queue.js" target="_blank" rel="noreferrer">here</a></p>
         </Container>
     )

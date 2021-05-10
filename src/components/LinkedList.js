@@ -99,7 +99,7 @@ const LinkedList = () => {
             </div>
             <p>Checkout the code <a href="https://github.com/Madhubalajb/Data-Structures-JS/blob/master/DS/singlyLL.js" target="_blank" rel="noreferrer">here</a></p>
         </Container>
-    )
+    )   
 }
 
 export default LinkedList
